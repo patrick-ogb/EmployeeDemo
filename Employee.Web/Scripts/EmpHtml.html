@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="CustomeStyle.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--GET EMPLOYEE BY ID. ALSO ADD SINGLE EMPLOYEE TO THE DATABASE-->
+    <table border="1" style="border-collapse:collapse">
+        <tr>
+            <td>
+                ID: <input id="empId" type="text" style="width:100px" />
+            </td>
+            <td>
+                <input id="getEmp" type="button" value="Get Employee" />
+            </td>
+        </tr>
+        <tr><td><br /></td><td></td></tr>
+
+    </table>
+
+    <table border="1" style="border-collapse:collapse">
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" id="firstName" /></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" id="lastName" /></td>
+        </tr>
+        <tr>
+            <td>Company Name</td>
+            <td><input type="text" id="companyName" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input id="addEmp" type="button" value="Add Employee" />
+            </td>
+            <td><div id="lastAddedId">Employee Id =</div></td>
+        </tr>
+    </table>
+
+    <br /><br />
+
+
+    <!--GET ALL EMPLOYEES FROM DATABASE-->
+    <table style="border-collapse: collapse" border="1">
+        <tr>
+            <td><input type="button" id="getAllEmployee" value="Get All Employee" /></td>
+        </tr>
+    </table>
+    <table id="tblEmployee" style="border-collapse: collapse" border="1">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Company Name</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="CustomeScript.js"></script>
+</body>
+</html>
